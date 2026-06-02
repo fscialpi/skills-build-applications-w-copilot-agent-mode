@@ -1,0 +1,73 @@
+:root {
+  color-scheme: light;
+  --octofit-bg: #f4efe6;
+  --octofit-surface: rgba(255, 255, 255, 0.82);
+  --octofit-accent: #1b4332;
+  --octofit-ink: #16241f;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  color: var(--octofit-ink);
+  background:
+    radial-gradient(circle at top left, rgba(27, 67, 50, 0.16), transparent 26%),
+    radial-gradient(circle at top right, rgba(249, 191, 41, 0.16), transparent 22%),
+    linear-gradient(180deg, #f8f4ec 0%, var(--octofit-bg) 100%);
+}
+
+.app-shell {
+  min-height: 100vh;
+}
+
+.hero-card,
+.feature-card,
+.logo-panel {
+  border: 1px solid rgba(22, 36, 31, 0.08);
+  border-radius: 1.5rem;
+  background: var(--octofit-surface);
+  backdrop-filter: blur(16px);
+}
+
+.hero-card {
+  margin-top: 2rem;
+  box-shadow: 0 24px 72px rgba(22, 36, 31, 0.12);
+}
+
+.feature-card,
+.logo-panel {
+  padding: 1.5rem;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: var(--octofit-accent);
+}
+
+.eyebrow::before {
+  content: '';
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 999px;
+  background: var(--octofit-accent);
+}
+
+.tracking-wide {
+  letter-spacing: 0.14em;
+}
+
+.feature-card {
+  box-shadow: 0 10px 28px rgba(22, 36, 31, 0.08);
+}
